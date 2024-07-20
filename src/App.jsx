@@ -21,7 +21,7 @@ function App() {
     return () => clearInterval(elapsedInterval);
   }, []);
 
-  // Format the elapsed time in HH:MM:SS
+  // Format the screen time in HH:MM:SS
   const formatScreenTime = (seconds) => {
     const hrs = Math.floor(seconds / 3600);
     const mins = Math.floor((seconds % 3600) / 60);
@@ -31,10 +31,13 @@ function App() {
 
   return (
     <>
-      <h1>ScreenTime Tracker</h1>
-      <div className="card">
-        <p>Current Time: {currentTime}</p>
-        <p>Screen Time: {formatScreenTime(screenTime)}</p>
+      <div className="container">
+        <h1>ScreenTime Tracker</h1>
+        <h3>by: Christian Barbosa</h3>
+        <div className="card">
+          <p>Current Time: {currentTime}</p>
+          <p>Screen Time: {formatScreenTime(screenTime)}</p>
+        </div>
       </div>
     </>
   );

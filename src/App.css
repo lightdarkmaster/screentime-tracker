@@ -1,3 +1,14 @@
+*{
+  box-sizing: border-box;
+  color: white;
+  font-weight: 500;
+}
+body{
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;/* Place the background behind the content */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -32,8 +43,18 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+.container{
+  position: relative;
+  text-align: center;
+  padding: 20%;
+  box-shadow: 2px 2px 3px rgba(64, 64, 64, 0.325);
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, rgba(40, 3, 92, 0.64),rgba(128, 0, 128, 0.359), rgba(255, 255, 255, 0.19));
+}
 .card {
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, rgba(225, 0, 255, 0.262), rgba(24, 50, 112, 0.333));
+  box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.353);
   padding: 2em;
 }
 
