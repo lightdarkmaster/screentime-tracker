@@ -10,7 +10,7 @@
       "https://*/*"
     ],
     "background": {
-      "scripts": ["dist/background.bundle.js"], 
+      "scripts": ["./dist/background.bundle.js"], 
       "persistent": false
     },
     "content_scripts": [
@@ -20,11 +20,7 @@
       }
     ],
     "browser_action": {
-      "default_popup": "/index.html"
-    },
-    "action": {
-      "default_popup": "/index.html",
+      "default_popup": "./index.html",
       "default_icon": "/src/assets/screentrack.png"
     }
-    
   }
